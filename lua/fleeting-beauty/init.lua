@@ -5,8 +5,10 @@ local function get_colours()
 
     local theme = {}
     theme.editor = require("fleeting-beauty.groups.dark.editor").get()
+    theme.syntax = require("fleeting-beauty.groups.dark.syntax").get()
+    theme.treesitter = require("fleeting-beauty.groups.dark.treesitter").get()
 
-    local groups = vim.tbl_deep_extend("keep", theme.editor)
+    local groups = vim.tbl_deep_extend("keep", theme.treesitter, theme.syntax, theme.editor)
 
     return groups
 end
