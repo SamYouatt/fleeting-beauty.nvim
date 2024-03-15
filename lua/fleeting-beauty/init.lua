@@ -9,11 +9,11 @@ local function get_colours()
     return groups
 end
 
-M.setup = function()
+function M.setup()
     vim.notify("Setting up nvim-fleet", vim.log.levels.ERROR)
 end
 
-M.load = function()
+function M.load()
     vim.notify("Loaded fleet theme", vim.log.levels.ERROR)
 
     local groups = get_colours()
