@@ -3,11 +3,15 @@ return {
 
 	pink = "#E394DC",
 	red = "#FF5269",
+    rust = "#CC7C89",
 	orange = "#F8AB17", -- dot in the diagnostic menu for a warning
     burnt_orange = "#7C5119",
 	yellow = "#EBC88E",
-	green = "#81DE8A", -- from TODO: comment
+	green = "#81DE8A",
+    leaf = "#A8CC7C",
+	emerald = "#81DE8A", -- from TODO: comment
 	teal = "#81D2CE",
+    mist = "#ADD1DE",
     swamp = "#2B524F",
     deepblue = "#1D2746",
 	navy = "#1B4A87", -- selection highlight

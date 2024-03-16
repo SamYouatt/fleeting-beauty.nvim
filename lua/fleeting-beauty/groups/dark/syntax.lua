@@ -2,48 +2,48 @@ local M = {}
 
 function M.get()
     return {
-        Comment = {},            -- just comments
-        SpecialComment = {},                               -- special things inside a comment
-        Constant = {},                                         -- (preferred) any constant
-        String = {},           -- a string constant: "this is a string"
-        Character = {},                                         --  a character constant: 'c', '\n'
-        Number = {},           --   a number constant: 234, 0xff
-        Float = {},                                         --    a floating point constant: 2.3e10
-        Boolean = {},         --  a boolean constant: TRUE, false
-        Identifier = {},  -- (preferred) any variable name
-        Function = {},        -- function name (also: methods for classes)
-        Statement = {},                                        -- (preferred) any statement
-        Conditional = {}, --  if, then, else, endif, switch, etc.
-        Repeat = {},             --   for, do, while, etc.
-        Label = {},                                         --    case, default, etc.
-        Operator = {},         -- "sizeof", "+", "*", etc.
-        Keyword = {},         --  any other keyword
-        Exception = {},       --  try, catch, throw
+        Comment = { fg = C.subtext1 },  -- just comments
+        SpecialComment = {},            -- special things inside a comment
+        Constant = { fg = C.lavender },   -- (preferred) any constant
+        String = { fg = C.pink },       -- a string constant: "this is a string"
+        Character = { fg = C.teal },    --  a character constant: 'c', '\n'
+        Number = { fg = C.yellow },     --   a number constant: 234, 0xff
+        Float = { link = "Number" },    --    a floating point constant: 2.3e10
+        Boolean = { fg = C.teal },      --  a boolean constant: TRUE, false
+        Identifier = { fg = C.text },   -- (preferred) any variable name
+        Function = { fg = C.yellow },   -- function name (also: methods for classes)
+        Statement = { fg = C.teal },    -- (preferred) any statement
+        Conditional = { fg = C.teal },  --  if, then, else, endif, switch, etc.
+        Repeat = { fg = C.teal },       --   for, do, while, etc.
+        Label = { fg = C.teal },        --    case, default, etc.
+        Operator = { fg = C.text },     -- "sizeof", "+", "*", etc.
+        Keyword = { fg = C.teal },      --  any other keyword
+        Exception = { fg = C.teal },    --  try, catch, throw
 
-        PreProc = {},                                           -- (preferred) generic Preprocessor
-        Include = {},         --  preprocessor #include
-        Define = {},                                       -- preprocessor #define
-        Macro = {},                                            -- same as Define
-        PreCondit = {},                                    -- preprocessor #if, #else, #endif, etc.
+        PreProc = {},                   -- (preferred) generic Preprocessor
+        Include = { fg = C.teal },      --  preprocessor #include
+        Define = {},                    -- preprocessor #define
+        Macro = {},                     -- same as Define
+        PreCondit = {},                 -- preprocessor #if, #else, #endif, etc.
 
-        StorageClass = {},                                    -- static, register, volatile, etc.
-        Structure = {},                                       --  struct, union, enum, etc.
-        Special = {},                                           -- (preferred) any special symbol
-        Type = {},              -- (preferred) int, long, char, etc.
-        Typedef = {},                                         --  A typedef
-        SpecialChar = {},                                  -- special character in a constant
-        Tag = {},                       -- you can use CTRL-] on this
-        Delimiter = {},                                     -- character that needs attention
-        Debug = {},                                        -- debugging statements
+        StorageClass = { fg = C.blue }, -- static, register, volatile, etc.
+        Structure = { fg = C.blue },    --  struct, union, enum, etc.
+        Special = {},                   -- (preferred) any special symbol
+        Type = { fg = C.blue },         -- (preferred) int, long, char, etc.
+        Typedef = {},                   --  A typedef
+        SpecialChar = {},               -- special character in a constant
+        Tag = { fg = C.sapphire },      -- you can use CTRL-] on this
+        Delimiter = {},                 -- character that needs attention
+        Debug = {},                     -- debugging statements
 
-        Underlined = {},                            -- (preferred) text that stands out, HTML links
+        Underlined = {},                -- (preferred) text that stands out, HTML links
         Bold = {},
         Italic = {},
         -- ("Ignore", below, may be invisible...)
         -- Ignore = { }, -- (preferred) left blank, hidden  |hl-Ignore|
 
-        Error = {},                                      -- (preferred) any erroneous construct
-        Todo = {}, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+        Error = { fg = C.red },    -- (preferred) any erroneous construct
+        Todo = { fg = C.emerald }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
         qfLineNr = {},
         qfFileName = {},
         htmlH1 = {},
@@ -56,28 +56,28 @@ function M.get()
         -- mkdLink = { fg = C.blue, style = { "underline" } },
 
         -- debugging
-        debugPC = {}, -- used for highlighting the current line in terminal-debug
-        debugBreakpoint = {},                -- used for breakpoint colors in terminal-debug
+        debugPC = {},         -- used for highlighting the current line in terminal-debug
+        debugBreakpoint = {}, -- used for breakpoint colors in terminal-debug
         -- illuminate
         illuminatedWord = {},
         illuminatedCurWord = {},
         -- diff
-        diffAdded = {},
-        diffRemoved = {},
-        diffChanged = {},
+        diffAdded = { fg = C.green },
+        diffRemoved = { fg = C.red },
+        diffChanged = { fg = C.navy },
         diffOldFile = {},
         diffNewFile = {},
         diffFile = {},
         diffLine = {},
         diffIndexLine = {},
-        DiffAdd = {},   -- diff mode: Added line |diff.txt|
+        DiffAdd = {},    -- diff mode: Added line |diff.txt|
         DiffChange = {}, -- diff mode: Changed line |diff.txt|
-        DiffDelete = {},  -- diff mode: Deleted line |diff.txt|
+        DiffDelete = {}, -- diff mode: Deleted line |diff.txt|
         DiffText = {},   -- diff mode: Changed text within a changed line |diff.txt|
         -- NeoVim
-        healthError = {},
-        healthSuccess = {},
-        healthWarning = {},
+        healthError = { fg = C.red },
+        healthSuccess = { fg = C.teal },
+        healthWarning = { fg = C.yellow },
         -- misc
 
         -- glyphs
@@ -90,12 +90,12 @@ function M.get()
         GlyphPalette9 = {},
 
         -- rainbow
-        rainbow1 = {},
-        rainbow2 = {},
-        rainbow3 = {},
-        rainbow4 = {},
-        rainbow5 = {},
-        rainbow6 = {},
+        rainbow1 = { fg = C.red },
+        rainbow2 = { fg = C.orange },
+        rainbow3 = { fg = C.yellow },
+        rainbow4 = { fg = C.green },
+        rainbow5 = { fg = C.blue },
+        rainbow6 = { fg = C.lavender },
     }
 end
 
