@@ -30,8 +30,8 @@ function M.get()
         NormalNC = { link = "Normal" },                  -- normal text in non-current windows
         NormalSB = { link = "Normal" },                  -- normal text in non-current windows
         NormalFloat = { fg = C.text, bg = C.alt_base },  -- Normal text in floating windows.
-        FloatBorder = { fg = C.surface0 },
-        FloatTitle = { fg = C.surface0 },                -- Title of floating windows
+        FloatBorder = { fg = C.surface0, bg = C.alt_base },
+        FloatTitle = { fg = C.surface0, bg = C.alt_base },                -- Title of floating windows
         Pmenu = { fg = C.text, bg = C.alt_base },        -- Popup menu: normal item e.g. tab popup in command bar.
         PmenuSel = { fg = C.text, bg = C.ocean },        -- Popup menu: selected item.
         PmenuSbar = { bg = C.surface2 },                 -- Popup menu: scrollbar.
