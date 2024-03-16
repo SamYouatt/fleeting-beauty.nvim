@@ -9,6 +9,7 @@ return {
 	green = "#81DE8A", -- from TODO: comment
 	teal = "#81D2CE",
     swamp = "#2B524F",
+    deepblue = "#1D2746",
 	navy = "#1B4A87", -- selection highlight
     ocean = "#194176",
 	sapphire = "#4D9BF8", -- link underlines and open file name
