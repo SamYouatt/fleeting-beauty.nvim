@@ -8,8 +8,9 @@ local function get_colours()
     theme.syntax = require("fleeting-beauty.groups.dark.syntax").get()
     theme.treesitter = require("fleeting-beauty.groups.dark.treesitter").get()
     theme.semantic_tokens = require("fleeting-beauty.groups.dark.semantic_tokens").get()
+    theme.telescope = require("fleeting-beauty.groups.dark.telescope").get()
 
-    local groups = vim.tbl_deep_extend("keep", theme.semantic_tokens, theme.treesitter, theme.syntax, theme.editor)
+    local groups = vim.tbl_deep_extend("keep", theme.telescope, theme.semantic_tokens, theme.treesitter, theme.syntax, theme.editor)
 
     return groups
 end
