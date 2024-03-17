@@ -1,41 +1,41 @@
-local colours = require("fleeting-beauty.palettes.dark")
-local fleeting_beauty = {}
+local colours = require("fleety.palettes.dark")
+local fleety = {}
 
-fleeting_beauty.normal = {
+fleety.normal = {
     a = { bg = colours.blue, fg = colours.base, gui = "bold" },
     b = { bg = colours.alt_base, fg = colours.blue },
     c = { bg = "NONE", fg = colours.text },
 }
 
-fleeting_beauty.insert = {
+fleety.insert = {
     a = { bg = colours.green, fg = colours.base, gui = "bold" },
     b = { bg = colours.alt_base, fg = colours.green },
 }
 
-fleeting_beauty.terminal = {
+fleety.terminal = {
     a = { bg = colours.green, fg = colours.base, gui = "bold" },
     b = { bg = colours.alt_base, fg = colours.green },
 }
 
-fleeting_beauty.command = {
+fleety.command = {
     a = { bg = colours.peach, fg = colours.base, gui = "bold" },
     b = { bg = colours.alt_base, fg = colours.peach },
 }
 
-fleeting_beauty.visual = {
+fleety.visual = {
     a = { bg = colours.mauve, fg = colours.base, gui = "bold" },
     b = { bg = colours.alt_base, fg = colours.mauve },
 }
 
-fleeting_beauty.replace = {
+fleety.replace = {
     a = { bg = colours.red, fg = colours.base, gui = "bold" },
     b = { bg = colours.alt_base, fg = colours.red },
 }
 
-fleeting_beauty.inactive = {
-    a = { bg = C.alt_base, fg = C.blue },
-    b = { bg = C.alt_base, fg = C.surface1, gui = "bold" },
-    c = { bg = C.alt_base, fg = C.overlay0 },
+fleety.inactive = {
+    a = { bg = colours.alt_base, fg = colours.blue },
+    b = { bg = colours.alt_base, fg = colours.surface1, gui = "bold" },
+    c = { bg = colours.alt_base, fg = colours.overlay0 },
 }
 
-return fleeting_beauty
+return fleety

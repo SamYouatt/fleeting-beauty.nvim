@@ -1,2 +1,2 @@
-# fleeting-beauty.nvim
+# fleety.nvim
 Nvim theme based on JetBrains Fleet

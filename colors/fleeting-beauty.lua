@@ -1,1 +1,0 @@
-require("fleeting-beauty").load()
