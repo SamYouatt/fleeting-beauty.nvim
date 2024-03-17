@@ -32,6 +32,7 @@ function M.get()
         ["@lsp.typemod.type.defaultLibrary"] = { link = "@type.builtin" },
         ["@lsp.typemod.variable.defaultLibrary"] = { link = "@variable.builtin" },
         ["@lsp.typemod.variable.injected"] = { link = "@variable" },
+        ["@lsp.type.property.lua"] = { link = "@variable.member.lua" },
     }
 end
 

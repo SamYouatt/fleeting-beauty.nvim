@@ -151,6 +151,7 @@ function M.get()
 
         -- lua
         ["@constructor.lua"] = {}, -- For constructor calls and definitions: = { } in Lua.
+        ["@variable.member.lua"] = { fg = C.blue },
 
         -- typescript
         ["@property.typescript"] = { fg = C.test },
