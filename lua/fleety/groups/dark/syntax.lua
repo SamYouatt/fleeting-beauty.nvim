@@ -64,7 +64,7 @@ function M.get()
         -- diff
         diffAdded = { fg = C.green },
         diffRemoved = { fg = C.red },
-        diffChanged = { fg = C.navy },
+        diffChanged = { fg = C.teal },
         diffOldFile = {},
         diffNewFile = {},
         diffFile = {},

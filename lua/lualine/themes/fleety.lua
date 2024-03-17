@@ -18,13 +18,13 @@ fleety.terminal = {
 }
 
 fleety.command = {
-    a = { bg = colours.peach, fg = colours.base, gui = "bold" },
-    b = { bg = colours.alt_base, fg = colours.peach },
+    a = { bg = colours.pink, fg = colours.base, gui = "bold" },
+    b = { bg = colours.alt_base, fg = colours.pink },
 }
 
 fleety.visual = {
-    a = { bg = colours.mauve, fg = colours.base, gui = "bold" },
-    b = { bg = colours.alt_base, fg = colours.mauve },
+    a = { bg = colours.teal, fg = colours.base, gui = "bold" },
+    b = { bg = colours.alt_base, fg = colours.teal },
 }
 
 fleety.replace = {
