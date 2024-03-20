@@ -34,6 +34,9 @@ local function get_colours()
     vim.notify("Unknown background", vim.log.level.ERROR)
 end
 
+function M.setup()
+end
+
 function M.load()
     if vim.g.colors_name then
         vim.cmd.hi("clear")
