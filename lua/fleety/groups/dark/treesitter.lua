@@ -9,7 +9,7 @@ function M.get()
         ["@variable.member"] = { fg = C.text }, -- For fields.
 
         ["@constant"] = { link = "Constant" }, -- For constants
-        ["@constant.builtin"] = { fg = C.teal }, -- For constant that are built in the language: nil in Lua.
+        ["@constant.builtin"] = { link = "Constant" }, -- For constant that are built in the language: nil in Lua.
         ["@constant.macro"] = { link = "Macro" }, -- For constants that are defined by macros: NULL in C.
 
         ["@module"] = {},                    -- For identifiers referring to modules and namespaces.

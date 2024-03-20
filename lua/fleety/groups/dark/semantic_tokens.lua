@@ -32,7 +32,16 @@ function M.get()
         ["@lsp.typemod.type.defaultLibrary"] = { link = "@type.builtin" },
         ["@lsp.typemod.variable.defaultLibrary"] = { link = "@variable.builtin" },
         ["@lsp.typemod.variable.injected"] = { link = "@variable" },
+
+        -- lua
         ["@lsp.type.property.lua"] = { link = "@variable.member.lua" },
+
+        -- rust
+        ["@lsp.type.macro.rust"] = { link = "@function.macro.rust" },
+        ["@lsp.type.selfKeyword.rust"] = { fg = C.rust },
+        ["@lsp.type.builtinType.rust"] = { fg = C.blue },
+        ["@lsp.type.decorator.rust"] = { link = "@function.macro" },
+        ["@punctuation.special.rust"] = { fg = C.text },
     }
 end
 
