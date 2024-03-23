@@ -17,7 +17,7 @@ function M.get()
         FoldColumn = { fg = C.surface1 },                  -- 'foldcolumn'
         SignColumn = { fg = C.surface1 },                  -- column where |signs| are displayed
         SignColumnSB = { link = "SignColumn" },            -- column where |signs| are displayed
-        Substitute = { fg = C.base, bg = C.teal },         -- |:substitute| replacement text highlighting
+        Substitute = { fg = C.base, bg = C.yellow },         -- |:substitute| replacement text highlighting
         LineNr = { fg = C.surface1 },                      -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
         CursorLineNr = { fg = C.purple },                -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line. highlights the number in numberline.
         MatchParen = { fg = C.text, bg = C.rose },        -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|

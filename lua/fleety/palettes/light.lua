@@ -5,9 +5,9 @@ return {
 	pink = "#B4467B",
 	red = "#D91400",
     orange = "#CC9C00",
+    yellow = "#FEE6B1",
     rust = "#8C6C41",
     carrot = "",
-	yellow = "",
 	green = "#01855F",
 	emerald = "#248701", -- from TODO: comment
     grass = "#59A86A",
@@ -28,6 +28,6 @@ return {
     surface0 = "#949494",
 
 	base = "#FFFFFF", -- background and main ui colour
-	alt_base = "#F4F8F8", -- other elements of ui
+	alt_base = "#F7F7F7", -- other elements of ui
 }
 
