@@ -17,10 +17,10 @@ function M.get()
         FoldColumn = { fg = C.surface1 },                  -- 'foldcolumn'
         SignColumn = { fg = C.surface1 },                  -- column where |signs| are displayed
         SignColumnSB = { link = "SignColumn" },            -- column where |signs| are displayed
-        Substitute = { fg = C.base, bg = C.blue },         -- |:substitute| replacement text highlighting
+        Substitute = { fg = C.base, bg = C.teal },         -- |:substitute| replacement text highlighting
         LineNr = { fg = C.surface1 },                      -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
-        CursorLineNr = { fg = C.surface0 },                -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line. highlights the number in numberline.
-        MatchParen = { fg = C.text, bg = C.swamp },        -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
+        CursorLineNr = { fg = C.purple },                -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line. highlights the number in numberline.
+        MatchParen = { fg = C.text, bg = C.rose },        -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
         ModeMsg = { fg = C.text },                         -- 'showmode' message (e.g., "-- INSERT -- ")
         -- MsgArea = { fg = C.text }, -- Area for messages and cmdline, don't set this highlight because of https://github.com/neovim/neovim/issues/17832
         MsgSeparator = {},                                 -- Separator for scrolled messages, `msgsep` flag of 'display'
@@ -33,17 +33,17 @@ function M.get()
         FloatBorder = { fg = C.surface0, bg = C.alt_base },
         FloatTitle = { fg = C.surface0, bg = C.alt_base }, -- Title of floating windows
         Pmenu = { fg = C.text, bg = C.alt_base },          -- Popup menu: normal item e.g. tab popup in command bar.
-        PmenuSel = { fg = C.text, bg = C.ocean },          -- Popup menu: selected item.
+        PmenuSel = { fg = C.text, bg = C.icicle },          -- Popup menu: selected item.
         PmenuSbar = { bg = C.surface2 },                   -- Popup menu: scrollbar.
         PmenuThumb = { bg = C.surface1 },                  -- Popup menu: Thumb of the scrollbar.
         Question = { fg = C.blue },                        -- |hit-enter| prompt and yes/no questions
-        QuickFixLine = { bg = C.surface2 },                -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
-        Search = { fg = C.base, bg = C.burnt_orange },     -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
-        IncSearch = { fg = C.base, bg = C.blue },          -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
+        QuickFixLine = { bg = C.alt_base },                -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
+        Search = { fg = C.base, bg = C.rust },     -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
+        IncSearch = { fg = C.base, bg = C.sky },          -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
         CurSearch = { fg = C.test },                       -- 'cursearch' highlighting: highlights the current search you're on differently
         SpecialKey = { link = "NonText" },                 -- Unprintable characters: text displayed differently from what it really is.  But not 'listchars' textspace. |hl-Whitespace|
         SpellBad = { sp = C.red },                         -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise. SpellCap = {}, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise. SpellLocal = {}, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
-        SpellCap = { sp = C.yellow },                      -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
+        SpellCap = { sp = C.orange },                      -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
         SpellLocal = { sp = C.teal },                      -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
         SpellRare = { sp = C.green },                      -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
         StatusLine = { fg = C.text, bg = C.alt_base },     -- status line of current window
