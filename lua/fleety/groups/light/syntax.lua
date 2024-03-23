@@ -2,29 +2,29 @@ local M = {}
 
 function M.get()
     return {
-        Comment = { fg = C.subtext1 },        -- just comments
+        Comment = { fg = C.emerald },        -- just comments
         SpecialComment = {},                  -- special things inside a comment
-        Constant = { fg = C.lavender },       -- (preferred) any constant
-        String = { fg = C.pink },             -- a string constant: "this is a string"
-        Character = { fg = C.teal },          --  a character constant: 'c', '\n'
-        Number = { fg = C.yellow },           --   a number constant: 234, 0xff
+        Constant = { fg = C.purple },       -- (preferred) any constant
+        String = { fg = C.rust },             -- a string constant: "this is a string"
+        Character = { fg = C.fuschia },          --  a character constant: 'c', '\n'
+        Number = { fg = C.fuschia },           --   a number constant: 234, 0xff
         Float = { link = "Number" },          --    a floating point constant: 2.3e10
         Boolean = { fg = C.teal },            --  a boolean constant: TRUE, false
-        Identifier = { fg = C.text },         -- (preferred) any variable name
-        Function = { fg = C.yellow },         -- function name (also: methods for classes)
+        Identifier = { fg = C.purple },         -- (preferred) any variable name
+        Function = { fg = C.green },         -- function name (also: methods for classes)
         Statement = { fg = C.teal },          -- (preferred) any statement
-        Conditional = { fg = C.teal },        --  if, then, else, endif, switch, etc.
-        Repeat = { fg = C.teal },             --   for, do, while, etc.
-        Label = { fg = C.teal },              --    case, default, etc.
+        Conditional = { fg = C.blue },        --  if, then, else, endif, switch, etc.
+        Repeat = { fg = C.blue },             --   for, do, while, etc.
+        Label = { fg = C.blue },              --    case, default, etc.
         Operator = { fg = C.text },           -- "sizeof", "+", "*", etc.
-        Keyword = { fg = C.teal },            --  any other keyword
-        Exception = { fg = C.teal },          --  try, catch, throw
+        Keyword = { fg = C.blue },            --  any other keyword
+        Exception = { fg = C.blue },          --  try, catch, throw
 
         PreProc = { fg = C.pink },                         -- (preferred) generic Preprocessor
-        Include = { fg = C.teal },            --  preprocessor #include
+        Include = { fg = C.blue },            --  preprocessor #include
         Define = {},                          -- preprocessor #define
-        Macro = { fg = C.lavender },                           -- same as Define
-        PreCondit = { fg = C.teal },                       -- preprocessor #if, #else, #endif, etc.
+        Macro = { fg = C.indigo },                           -- same as Define
+        PreCondit = { fg = C.blue },                       -- preprocessor #if, #else, #endif, etc.
 
         StorageClass = { fg = C.blue },       -- static, register, volatile, etc.
         Structure = { fg = C.blue },          --  struct, union, enum, etc.
@@ -32,7 +32,7 @@ function M.get()
         Type = { fg = C.blue },               -- (preferred) int, long, char, etc.
         Typedef = {},                         --  A typedef
         SpecialChar = { link = "Character" }, -- special character in a constant
-        Tag = { fg = C.sapphire },            -- you can use CTRL-] on this
+        Tag = { fg = C.blue },            -- you can use CTRL-] on this
         Delimiter = { fg = C.text },   -- character that needs attention
         Debug = {},                           -- debugging statements
 
@@ -64,7 +64,7 @@ function M.get()
         -- diff
         diffAdded = { fg = C.green },
         diffRemoved = { fg = C.red },
-        diffChanged = { fg = C.teal },
+        diffChanged = { fg = C.orange },
         diffOldFile = {},
         diffNewFile = {},
         diffFile = {},
@@ -76,7 +76,7 @@ function M.get()
         DiffText = {},   -- diff mode: Changed text within a changed line |diff.txt|
         -- NeoVim
         healthError = { fg = C.red },
-        healthSuccess = { fg = C.teal },
+        healthSuccess = { fg = C.green },
         healthWarning = { fg = C.yellow },
         -- misc
 

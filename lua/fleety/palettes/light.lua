@@ -8,7 +8,7 @@ return {
     yellow = "#FEE6B1",
     rust = "#8C6C41",
     carrot = "",
-	green = "#01855F",
+	green = "#02855F",
 	emerald = "#248701", -- from TODO: comment
     grass = "#59A86A",
 	teal = "#0293A1",
@@ -19,6 +19,7 @@ return {
 	blue = "#0F54D6",
 	purple = "#6B2FBA", -- found this
     indigo = "#300073",
+    fuschia = "#941390",
 
 	text = "#383838",
 	subtext1 = "#767676", -- comment colour
