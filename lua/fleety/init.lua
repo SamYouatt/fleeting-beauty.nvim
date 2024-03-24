@@ -3,7 +3,9 @@ local M = {}
 local function get_colours()
     local light_palette = require("fleety.palettes.light")
     local dark_palette = require("fleety.palettes.dark")
+
     C = vim.o.background == "light" and light_palette or dark_palette
+    C.none = "NONE"
 
     local dark_theme = {}
     dark_theme.editor = require("fleety.groups.dark.editor").get()
@@ -11,6 +13,7 @@ local function get_colours()
     dark_theme.treesitter = require("fleety.groups.dark.treesitter").get()
     dark_theme.semantic_tokens = require("fleety.groups.dark.semantic_tokens").get()
     dark_theme.telescope = require("fleety.groups.dark.telescope").get()
+    dark_theme.native_lsp = require("fleety.groups.dark.native_lsp").get()
 
     local light_theme = {}
     light_theme.editor = require("fleety.groups.light.editor").get()
@@ -21,7 +24,7 @@ local function get_colours()
 
     if vim.o.background == "dark" then
         local dark_groups = vim.tbl_deep_extend("keep", dark_theme.telescope, dark_theme.semantic_tokens,
-            dark_theme.treesitter, dark_theme.syntax, dark_theme.editor)
+            dark_theme.native_lsp, dark_theme.treesitter, dark_theme.syntax, dark_theme.editor)
 
         return dark_groups
     elseif vim.o.background == "light" then
