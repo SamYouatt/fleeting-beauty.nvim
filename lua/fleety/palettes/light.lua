@@ -2,14 +2,14 @@ return {
     test = "#15ff00",
 
     rose = "#FFE8FF",
-	pink = "#B4467B",
+	pink = "#AB2F6B",
 	red = "#D91400",
     orange = "#CC9C00",
     yellow = "#FEE6B1",
     rust = "#8C6C41",
     carrot = "",
 	green = "#02855F",
-	emerald = "#248701", -- from TODO: comment
+	emerald = "#248701",
     grass = "#59A86A",
 	teal = "#0293A1",
     mist = "",

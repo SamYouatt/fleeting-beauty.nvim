@@ -4,7 +4,7 @@ function M.get()
     local colours = {
         -- Identifiers
         ["@variable"] = { fg = C.text },     -- Any variable name that does not have another highlight.
-        ["@variable.builtin"] = { fg = C.teal }, -- Variable names that are defined by the languages, like this or self.
+        ["@variable.builtin"] = { fg = C.blue }, -- Variable names that are defined by the languages, like this or self.
         ["@variable.parameter"] = { fg = C.text }, -- For parameters of a function.
         ["@variable.member"] = { fg = C.text }, -- For fields.
 
@@ -21,7 +21,7 @@ function M.get()
         ["@string.escape"] = { link = "Character" }, -- For escape characters within a string.
         ["@string.special"] = { link = "Special" },  -- other special strings (e.g. dates)
         ["@string.special.symbol"] = { link = "Special" },
-        ["@string.special.url"] = { fg = C.sapphire }, -- urls, links and emails
+        ["@string.special.url"] = { fg = C.indigo }, -- urls, links and emails
 
         ["@character"] = { link = "Character" },     -- character literals
         ["@character.special"] = { link = "SpecialChar" }, -- special characters (e.g. wildcards)
@@ -32,7 +32,7 @@ function M.get()
 
         -- Types
         ["@type"] = { link = "Type" },        -- For types.
-        ["@type.builtin"] = { fg = C.teal },  -- For builtin types.
+        ["@type.builtin"] = { fg = C.purple },  -- For builtin types.
         ["@type.definition"] = { link = "Type" }, -- type definitions (e.g. `typedef` in C)
         ["@type.qualifier"] = { link = "Keyword" }, -- type qualifiers (e.g. `const`)
 
@@ -43,12 +43,12 @@ function M.get()
         ["@function"] = { link = "Function" },       -- For function (calls and definitions).
         ["@function.builtin"] = {},                  -- For builtin functions: table.insert in Lua.
         ["@function.call"] = { link = "Function" },  -- function calls
-        ["@function.macro"] = { fg = C.leaf },       -- For macro defined functions (calls and definitions): each macro_rules in Rust.
+        ["@function.macro"] = { fg = C.pink },       -- For macro defined functions (calls and definitions): each macro_rules in Rust.
 
         ["@function.method"] = { link = "Function" }, -- For method definitions.
         ["@function.method.call"] = { link = "Function" }, -- For method calls.
 
-        ["@constructor"] = { fg = C.blue },          -- For constructor calls and definitions: = { } in Lua, and Java constructors.
+        ["@constructor"] = { fg = C.purple },          -- For constructor calls and definitions: = { } in Lua, and Java constructors.
         ["@operator"] = { link = "Operator" },       -- For any operator: +, but also -> and * in C.
 
         -- Keywords
@@ -77,8 +77,8 @@ function M.get()
         ["@comment"] = { link = "Comment" },
 
         ["@comment.error"] = { link = "Error" },
-        ["@comment.warning"] = { fg = C.yellow },
-        ["@comment.hint"] = { fg = C.navy },
+        ["@comment.warning"] = { fg = C.orange },
+        ["@comment.hint"] = { fg = C.fuschia },
         ["@comment.todo"] = { link = "Todo" },
 
         -- Markup
@@ -109,9 +109,9 @@ function M.get()
         ["@diff.delta"] = { link = "diffChanged" }, -- deleted text (for diff files)
 
         -- Tags
-        ["@tag"] = { fg = C.blue },         -- Tags like html tag names.
-        ["@tag.attribute"] = { fg = C.lavender }, -- Tags like html tag names.
-        ["@tag.delimiter"] = { fg = C.subtext1 }, -- Tag delimiter like < > /
+        ["@tag"] = { fg = C.purple },         -- Tags like html tag names.
+        ["@tag.attribute"] = { fg = C.emerald }, -- Tags like html tag names.
+        ["@tag.delimiter"] = { fg = C.purple }, -- Tag delimiter like < > /
 
         -- Misc
         ["@error"] = { link = "Error" },
@@ -132,16 +132,16 @@ function M.get()
         ["@constant.java"] = {},
 
         -- css
-        ["@property.css"] = { fg = C.teal },
+        ["@property.css"] = { fg = C.blue },
         ["@property.id.css"] = { fg = C.blue },
         ["@property.class.css"] = { fg = C.lavender },
-        ["@type.css"] = { fg = C.teal },
-        ["@type.tag.css"] = { fg = C.yellow },
-        ["@string.css"] = { fg = C.yellow },
-        ["@string.plain.css"] = { fg = C.pink },
-        ["@number.css"] = { fg = C.yellow },
-        ["@function.css"] = { fg = C.lavender },
-        ["@variable.css"] = { fg = C.pink },
+        ["@type.css"] = { fg = C.purple },
+        ["@type.tag.css"] = { fg = C.indigo },
+        ["@string.css"] = { fg = C.indigo },
+        ["@string.plain.css"] = { fg = C.text },
+        ["@number.css"] = { fg = C.pink },
+        ["@function.css"] = { fg = C.green },
+        ["@variable.css"] = { fg = C.purple },
 
         -- toml
         ["@property.toml"] = {}, -- Differentiates between string and properties
@@ -159,7 +159,8 @@ function M.get()
 
         -- TSX (Typescript React)
         ["@constructor.tsx"] = {},
-        ["@tag.attribute.tsx"] = { fg = C.lavender },
+        ["@tag.attribute.tsx"] = { fg = C.emerald },
+        ["@variable.member.tsx"] = { fg = C.teal },
 
         -- yaml
         ["@variable.member.yaml"] = {}, -- For fields.
