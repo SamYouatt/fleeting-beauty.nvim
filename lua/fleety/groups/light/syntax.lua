@@ -27,7 +27,7 @@ function M.get()
         PreCondit = { fg = C.blue },                       -- preprocessor #if, #else, #endif, etc.
 
         StorageClass = { fg = C.blue },       -- static, register, volatile, etc.
-        Structure = { fg = C.blue },          --  struct, union, enum, etc.
+        Structure = { fg = C.purple },          --  struct, union, enum, etc.
         Special = { link = "Character" },     -- (preferred) any special symbol
         Type = { fg = C.blue },               -- (preferred) int, long, char, etc.
         Typedef = {},                         --  A typedef

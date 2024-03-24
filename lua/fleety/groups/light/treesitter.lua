@@ -43,7 +43,7 @@ function M.get()
         ["@function"] = { link = "Function" },       -- For function (calls and definitions).
         ["@function.builtin"] = {},                  -- For builtin functions: table.insert in Lua.
         ["@function.call"] = { link = "Function" },  -- function calls
-        ["@function.macro"] = { fg = C.pink },       -- For macro defined functions (calls and definitions): each macro_rules in Rust.
+        ["@function.macro"] = { fg = C.fuschia },       -- For macro defined functions (calls and definitions): each macro_rules in Rust.
 
         ["@function.method"] = { link = "Function" }, -- For method definitions.
         ["@function.method.call"] = { link = "Function" }, -- For method calls.
@@ -153,6 +153,9 @@ function M.get()
         ["@constructor.lua"] = {}, -- For constructor calls and definitions: = { } in Lua.
         ["@variable.member.lua"] = { fg = C.blue },
 
+        -- Rust
+        ["@type.rust"] = { fg = C.purple },
+
         -- typescript
         ["@property.typescript"] = { fg = C.test },
         ["@constructor.typescript"] = {},
@@ -161,6 +164,7 @@ function M.get()
         ["@constructor.tsx"] = {},
         ["@tag.attribute.tsx"] = { fg = C.emerald },
         ["@variable.member.tsx"] = { fg = C.teal },
+        ["@constant.tsx"] = { fg = C.text },
 
         -- yaml
         ["@variable.member.yaml"] = {}, -- For fields.

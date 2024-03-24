@@ -38,10 +38,14 @@ function M.get()
 
         -- rust
         ["@lsp.type.macro.rust"] = { link = "@function.macro.rust" },
-        ["@lsp.type.selfKeyword.rust"] = { fg = C.rust },
+        ["@lsp.type.selfKeyword.rust"] = { fg = C.blue },
         ["@lsp.type.builtinType.rust"] = { fg = C.blue },
         ["@lsp.type.decorator.rust"] = { link = "@function.macro" },
         ["@punctuation.special.rust"] = { fg = C.text },
+        ["@lsp.type.enum.rust"] = { fg = C.pink },
+
+        -- tsx
+        ["@lsp.type.interface.typescriptreact"] = { fg = C.purple },
     }
 end
 
