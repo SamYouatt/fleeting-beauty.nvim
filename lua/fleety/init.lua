@@ -21,6 +21,7 @@ local function get_colours()
     light_theme.treesitter = require("fleety.groups.light.treesitter").get()
     light_theme.semantic_tokens = require("fleety.groups.light.semantic_tokens").get()
     light_theme.telescope = require("fleety.groups.light.telescope").get()
+    light_theme.native_lsp = require("fleety.groups.light.native_lsp").get()
 
     if vim.o.background == "dark" then
         local dark_groups = vim.tbl_deep_extend("keep", dark_theme.telescope, dark_theme.semantic_tokens,
@@ -29,7 +30,7 @@ local function get_colours()
         return dark_groups
     elseif vim.o.background == "light" then
         local light_groups = vim.tbl_deep_extend("keep", light_theme.telescope, light_theme.semantic_tokens,
-            light_theme.treesitter, light_theme.syntax, light_theme.editor)
+            light_theme.native_lsp, light_theme.treesitter, light_theme.syntax, light_theme.editor)
 
         return light_groups
     end

@@ -4,7 +4,7 @@ return {
     rose = "#FFE8FF",
 	pink = "#AB2F6B",
 	red = "#D91400",
-    orange = "#CC9C00",
+    orange = "#FFA500",
     yellow = "#FEE6B1",
     rust = "#8C6C41",
     carrot = "",
