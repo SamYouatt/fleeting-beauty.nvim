@@ -15,6 +15,8 @@ function M.get()
         LspReferenceWrite = {}, -- used for highlighting "write" references
         -- highlight diagnostics in numberline
 
+        DiagnosticUnnecessary = { fg = C.subtext1 }, -- defaults to comment colour normally
+
         DiagnosticVirtualTextError = {
             bg = C.none,
             fg = error,
@@ -38,10 +40,10 @@ function M.get()
         DiagnosticHint = { bg = C.none, fg = hint },    -- Used as the mantle highlight group. Other Diagnostic highlights link to this by default
 
         -- for nvim nightly
-        DiagnosticUnderlineError = { sp = error },        -- Used to underline "Error" diagnostics
-        DiagnosticUnderlineWarn = { sp = warning },       -- Used to underline "Warn" diagnostics
-        DiagnosticUnderlineInfo = { sp = info },          -- Used to underline "Info" diagnostics
-        DiagnosticUnderlineHint = { sp = hint },          -- Used to underline "Hint" diagnostics
+        DiagnosticUnderlineError = { underline = true },        -- Used to underline "Error" diagnostics
+        DiagnosticUnderlineWarn = { underline = true },       -- Used to underline "Warn" diagnostics
+        DiagnosticUnderlineInfo = { underline = true },          -- Used to underline "Info" diagnostics
+        DiagnosticUnderlineHint = { underline = true },          -- Used to underline "Hint" diagnostics
 
         DiagnosticFloatingError = { fg = error },         -- Used to color "Error" diagnostic messages in diagnostics float
         DiagnosticFloatingWarn = { fg = warning },        -- Used to color "Warn" diagnostic messages in diagnostics float
