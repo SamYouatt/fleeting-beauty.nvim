@@ -1,4 +1,9 @@
-local colours = require("fleety.palettes.dark")
+local light_palette = require("fleety.palettes.light")
+local dark_palette = require("fleety.palettes.dark")
+
+local colours = vim.o.background == "light" and light_palette or dark_palette
+colours.none = "NONE"
+
 local fleety = {}
 
 fleety.normal = {
